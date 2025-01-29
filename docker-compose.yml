@@ -1,0 +1,13 @@
+services:
+  sisaxs_web:
+    build: ./
+    command: /app/docker-entrypoint.sh
+    ports:
+      - 41080:80
+      - 41006:3306
+    volumes:
+      - ./:/var/www/html
+      - my_db:/var/lib/mysql
+
+volumes:
+  my_db:
