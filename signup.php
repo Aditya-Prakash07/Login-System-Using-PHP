@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
         if($showError){
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Failure!</strong> '.$showError.'
+                    <strong>Failure!</strong>'. $showError .'
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>';
         }
@@ -86,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             Make sure to enter same password.
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Signup</button>
+        <button type="submit" class="btn btn-primary btn-lg">Signup</button>
       </form>
     </div>
     <script
