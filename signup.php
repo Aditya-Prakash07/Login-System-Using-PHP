@@ -66,6 +66,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           >
           <input
             type="text"
+            maxlength="25"
             class="form-control"
             id="username"
             name="username"
@@ -76,6 +77,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           <label for="password" class="form-label">Password</label>
           <input
             type="password"
+            maxlength="16"
             class="form-control"
             id="password"
             name="password"
