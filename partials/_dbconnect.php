@@ -7,6 +7,7 @@ $database = "users";
 $conn = mysqli_connect($server, $username, $password, $database);
 if(!$conn){
     die("unable to connect to the database".mysqli_connect_error());
+    exit();
 }
 
 ?>
