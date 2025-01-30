@@ -3,7 +3,6 @@ session_start();
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
     header("location: login.php");
     exit;
-
 }
 ?>
 <!doctype html>
@@ -17,9 +16,21 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
   <body>
     <?php require 'partials/_nav.php'?>
     <div class="container mt-3">
-    <h1>Welcome to the welcome page. <?php echo $_SESSION['username']; ?> !</h1>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Welcome <?php echo $_SESSION['username']; ?> !</h4>
+            <p>
+                Welcome to iSecure! 🔒  
+                Your ultimate security companion for a safer digital experience.  
+
+                At iSecure, we blend cutting-edge technology with robust security measures to keep you protected at all times. Your trust is our priority, and we strive to provide a seamless, secure, and hassle-free experience.  
+
+                Stay secure, stay ahead! 🚀  
+            </p>
+            <hr>
+            <p class="mb-0">Your security is our mission—stay protected, stay empowered with iSecure.</p>
 
 
+        </div>
     </div>
 
 
